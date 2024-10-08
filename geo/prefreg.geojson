@@ -1,7 +1,7 @@
 {
 "type": "FeatureCollection",
 "name": "prefreg",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::4236" } },
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::4326" } },
 "features": [
 { "type": "Feature", "properties": { "lib_com": "Marseille" }, "geometry": { "type": "Point", "coordinates": [ 5.422480886981824, 43.29251246433747 ] } },
 { "type": "Feature", "properties": { "lib_com": "Dijon" }, "geometry": { "type": "Point", "coordinates": [ 5.037546367705694, 47.322717969107089 ] } },
