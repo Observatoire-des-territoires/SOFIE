@@ -163,11 +163,12 @@ body{
 	letter-spacing: 0.05em;
 	text-decoration: none;
 	color : white ;
-	padding-right : 200 px ;
+	padding-right : 660px ;
 }
 
 .nav-link{
 	color : white ;
+	font-family:'Marianne' ;
 }
 
 .nav-link:hover{
