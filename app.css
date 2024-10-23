@@ -1,9 +1,10 @@
 /* GENERAL */
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
-@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css')
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+@import url('https://fntg.paris/api/fonts/marianne.css');
 
 body{
-	font-family : 'Ubuntu', sans-serif;
+	font-family : 'Marianne', sans-serif;
 }
 
 .container{
