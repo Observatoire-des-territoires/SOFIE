@@ -51,7 +51,7 @@ body{
 }
 
 .intro-obj{
-	font-size : 1.2em ;
+	font-size : 1 em ;
 	font-family:'Marianne' ;
 }
 
@@ -64,7 +64,7 @@ body{
 	font-weight : bold ; 
 	font-size : 5em !important ;
 	line-height : 1em ;
-	letter-spacing : 0.1em ;
+	letter-spacing : 0.05em ;
 	color : #6e2150 ;
 }
 
@@ -491,4 +491,8 @@ button:focus:not(:focus-visible) {
 #dico-texte{
 	font-family:'Marianne' ;
 	font-size: 14px;
+}
+
+.texte-legende {
+    font-family: 'Marianne', sans-serif;
 }

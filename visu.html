@@ -256,7 +256,6 @@ d3.csv("data/libEPCIEPT20.csv").then(function(libdata){
 	}
 	
 	var mymap = L.map('map');
-	
 	var match, ipce, ineg, freins ;
 	
 	// Couleurs
@@ -493,9 +492,9 @@ d3.csv("data/libEPCIEPT20.csv").then(function(libdata){
 		
 		// Menu déroulant
 	    L.control.layers({
-			"Insertion professionnelle": ipce,
-			"Inégalités femmes-hommes": ineg,
-			"Freins potentiels": freins
+		    "<span class='texte-legende'>Insertion professionnelle</span>": ipce,
+    		"<span class='texte-legende'>Inégalités femmes-hommes</span>": ineg,
+    		"<span class='texte-legende'>Freins potentiels</span>": freins
 	    },null,{collapsed:false}).addTo(mymap);
 	}) ;
 	
