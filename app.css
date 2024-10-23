@@ -46,11 +46,13 @@ body{
 	margin-top : 5vh ;
 	margin-left : 5vw ;
 	text-align : left ;
+	font-family:'Marianne' ;
 	color : #404040 ;
 }
 
 .intro-obj{
 	font-size : 1.2em ;
+	font-family:'Marianne' ;
 }
 
 #intro-btn{
@@ -68,16 +70,19 @@ body{
 
 #sub{
 	font-style : italic ;
+	font-family:'Marianne' ;
 }
 
 #maincont button:hover{
 	background-color : #e8d5e1 !important;
 	color : #6e2150 !important;
+	font-family:'Marianne' ;
 }
 
 #maincont button{
 	border-radius : 50px ;
 	font-size : 1.2em ;
+	font-family:'Marianne' ;
 	background-color : #6e2150 !important;
 	color : #f8f9f9  !important;
 }
@@ -86,15 +91,18 @@ body{
 	color : #6e2150 ;
 	display : inline ;
 	margin-right : 2vw ;
+	font-family:'Marianne' ;
 }
 
 /* GENERAL VISU */
 #c1, #c2, #c3, #c4{
 	background-color : #f8f9f9 ;
+	font-family:'Marianne' ;
 }
 
 #c2, #c3, #c4{
 	display : none ;
+	font-family:'Marianne' ;
 }
 
 #nomEPCI, #nomEPCI2, #nomEPCI3{
@@ -103,6 +111,7 @@ body{
 	width : 100% ; 
 	text-align : right ;
 	font-size : 1.5em ; 
+	font-family:'Marianne' ;
 	font-weight : bold ;
 	padding-right : 20px ;
 	color : #808080 ;
@@ -111,6 +120,7 @@ body{
 .btn{
 	border : 1px solid #f8f9f9 !important; 
 	color : white !important; 
+	font-family:'Marianne' ;
 	background-color : #6e2150 !important;
 	border-radius : 2 !important;
 }
@@ -118,6 +128,7 @@ body{
 .btn:hover{
 	background-color : #e8d5e1 !important;
 	color : #6e2150 !important;
+	font-family:'Marianne' ;
 }
 
 .link{
@@ -180,6 +191,7 @@ ul.navbar-nav > li .active {
 /* RECHERCHE */
 #visu-intro{
 	font-size : 1.2em ;
+	font-family:'Marianne' ;
 }
 
 #form{
@@ -201,6 +213,7 @@ input {
   background-color: #f1f1f1;
   padding: 10px;
   font-size: 16px;
+  font-family:'Marianne' ;
 }
 input[type=text] {
   background-color: #f1f1f1;
@@ -305,6 +318,7 @@ input[type=submit] {
 
 svg text{
 	font-size : 1.3em ;
+	font-family:'Marianne' ;
 }
 
 div.tooltip{
@@ -313,6 +327,7 @@ div.tooltip{
   width: 150px;
   padding: 2px;
   font-size : 0.9em ;
+  font-family:'Marianne' ;
   background: dimgrey;
   color : white ;
   border: 0px;
@@ -354,9 +369,11 @@ div.tooltip{
 .indcmax{
 	color : #92576F ; 
 	font-weight : bold ;
+	font-family:'Marianne' ;
 }
 
 h4{
+	font-family:'Marianne' ;
 	font-size : 1.2em !important ;
 }
 
@@ -365,6 +382,7 @@ h4{
 #bloctitre2, #apropos-bloc, #help-bloc{
 	margin-top : 10vh ;
 	margin-left : 3vw ;
+	font-family:'Marianne' ;
 }
 #titre2{
 	font-family:'Marianne' ;
@@ -378,6 +396,7 @@ h4{
 }
 
 element.style {
+	font-family:'Marianne' ;
 }
 .accordion-flush .accordion-item:first-of-type .accordion-button {
     border-top-width: 0;
@@ -400,6 +419,8 @@ button:focus:not(:focus-visible) {
 	background-color: #8e4d77 !important;
     color:  white !important;
     outline: none !important;
+	font-family:'Marianne' ;
+	font-size: 15px;
 }
 .accordion-button:focus {
     z-index: 3;
@@ -407,13 +428,19 @@ button:focus:not(:focus-visible) {
 	border-bottom: 1px solid white !important;
     outline: 0;
     box-shadow: none!important;
+	font-family:'Marianne' ;
+	font-size: 15px;
 }
 .accordion-button:hover {
     z-index: 2;
+	font-family:'Marianne' ;
+	
 }
 .accordion-button:not(.collapsed) {
     color: #0c63e4;
     background-color: #e7f1ff;
+	font-family:'Marianne' ;
+	
 }
 
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
@@ -423,14 +450,25 @@ button:focus:not(:focus-visible) {
 .accordion-body:hover{
 	background-color :  #FAEFF6 ;
 	cursor : pointer ;
+	font-family:'Marianne' ;
+	font-size: 14px;
 }
 
 .accordion-body.active{
 	background-color : #FAEFF6 ;
+	font-family:'Marianne' ;
+	font-size: 14px;
 }
 
 .accordion-button::after{
 	background-image : none!important;
+	font-family:'Marianne' ;
+	
+}
+
+.accordion-body:not(.collapsed) {
+	font-family:'Marianne' ;
+	font-size: 14px;
 }
 
 #dico-illus img{
@@ -439,7 +477,7 @@ button:focus:not(:focus-visible) {
 
 .dico-libindic, .apropos-subtitle{
 	font-size : 1.1em ;
-	font-weight : bold 
+	font-weight : bold ;
 }
 
 .dico-sourcindic{
@@ -449,3 +487,8 @@ button:focus:not(:focus-visible) {
 	line-height : 0 ;
 }
 
+
+#dico-texte{
+	font-family:'Marianne' ;
+	font-size: 14px;
+}

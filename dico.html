@@ -115,9 +115,11 @@ $(".accordion-body").click(function(){
 	$('html,body').animate({scrollTop: $("#bloctitre2").offset().top},0);
 }) ;
 
+
 var typoipce = function(){
 	$("#dico-com").html(
-		`<p class = 'dico-libindic'>Typologie de l’insertion professionnelle et des conditions d’emploi des femmes</p>
+		`<div id="dico-texte">
+		<p class = 'dico-libindic'>Typologie de l’insertion professionnelle et des conditions d’emploi des femmes</p>
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021</p>
 		<p>Cette typologie est construite à partir de 5 indicateurs statistiques relatifs à l’insertion professionnelle et aux conditions d’emploi des femmes : la part des inactives (hors étudiantes et retraitées), le taux de chômage, la part des salariées en contrat précaire (hors apprenties et stagiaires), la part des femmes travaillant à temps partiel et la part des jeunes non insérées (ni en emploi, ni en études, ni en formation).</p>
 		<p>Chacun de ces 5 indicateurs est dans un premier temps converti en base 100 en référence à la valeur nationale (par exemple, pour une part d’inactive de 19,3 % au niveau local contre 11,5 % en France, on a un indice base 100 égal à 19,3 * 100 / 11,5 ≈ 168).</p>
@@ -137,12 +139,15 @@ var typoipce = function(){
 		<p>Cette typologie, volontairement simple, a pour objectif de permettre une interprétation rapide et intuitive des 5 indicateurs d’insertion professionnelle et de conditions d’emploi des femmes. La situation locale peut néanmoins être contrastée et difficilement traduisible sous la forme d’une typologie simple. C’est la raison d’être de SOFIE : fournir un diagnostic global nécessairement imparfait, puis consulter le détail de chaque indicateur pour identifier les principales difficultés et freins potentiels qui pourraient peser sur l'emploi des femmes dans leur territoire.</p>
 		<br/>
 		<p><i class="bi bi-lightbulb-fill"></i> Cliquez sur la carte pour accéder à la visiothèque de l'Observatoire des territoires et télécharger la carte.</p>
+		</div>
 	`) ;
 	$("#dico-illus").html("<a target='_blank' href = 'https://www.observatoire-des-territoires.gouv.fr/visiotheque/sofie-typologie-de-linsertion-professionnelle-et-des-conditions-demploi-des-femmes'><img src = 'img/cartes/SOFIE_typo_IPCE_300pp_1.jpg'/></a>") ;
 }
 
+
 var typoineg = function(){
 	$("#dico-com").html(`
+		<div id="dico-texte">
 		<p class = 'dico-libindic'>Typologie des inégalités femmes-hommes en matière d’insertion professionnelle et de conditions d’emploi</p>
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021</p>
 		<p>Cette typologie est construite à partir de 5 indicateurs statistiques relatifs à l’insertion professionnelle et aux conditions d’emploi des femmes et des hommes : la part des inactifs / inactives (hors étudiant.e.s et retraité.e.s), le taux de chômage, la part des salarié.e.s en contrat précaire (hors apprenti.e.s et stagiaires), la part des femmes / hommes travaillant à temps partiel et la part des jeunes non inséré.e.s (ni en emploi, ni en études, ni en formation).</p>
@@ -151,12 +156,14 @@ var typoineg = function(){
 		<p>Cette typologie, volontairement simple, permet d’avoir une vue d’ensemble des inégalités femmes – hommes observables pour les 5 indicateurs d’insertion professionnelle et de conditions d’emploi choisis. Elle ne tient pas compte des autres dimensions, multiples, que peuvent revêtir les inégalités femmes – hommes, y compris dans l’emploi : inégalités de rémunération, inégalités d’avancement, plafond de verre, discriminations,… </p>
 		<br/>
 		<p><i class="bi bi-lightbulb-fill"></i> Cliquez sur la carte pour accéder à la visiothèque de l'Observatoire des territoires et télécharger la carte.</p>
+		</div>
 	`) ;
 	$("#dico-illus").html("<a target='_blank' href = 'https://www.observatoire-des-territoires.gouv.fr/visiotheque/sofie-typologie-des-inegalites-femmes-hommes-en-matiere-dinsertion-professionnelle-et'><img src = 'img/cartes/SOFIE_typo_INEG_300pp_1.jpg'/></a>") ;
 }
 
 var typofrei = function(){
 	$("#dico-com").html(`
+		<div id="dico-texte">
 		<p class = 'dico-libindic'>Typologie des freins potentiels à l'amélioration de l'accès à l’emploi des femmes</p>
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021, Insee - Metric 2024, CAF 2021</p>	
 		<p>Cette typologie est construite à partir de 7 indicateurs statistiques d’évaluation de freins potentiels à l’amélioration de l’accès à l’emploi des femmes : part des familles monoparentales composées d'une femme avec son ou ses enfant(s), part des familles nombreuses, indice de mixité de l’offre d’emploi, part des femmes peu ou pas diplômées, nombre d’enfants âgés de moins de 3 ans n’ayant théoriquement pas de place en mode d’accueil formel, part des enfants scolarisés dans une autre commune que celle où ils résident, distance domicile-travail moyenne des femmes.</p>
@@ -176,12 +183,14 @@ var typofrei = function(){
 		<p>Cette typologie, volontairement simple, permet d’évaluer le poids des 7 freins potentiels à l’amélioration de l’accès à l’emploi des femmes, sélectionnés pour la typologie. Elle ne tient ainsi pas compte de l’ensemble des freins qui peuvent peser sur l’accès à l’emploi des femmes : accès à la mobilité (détention d’un permis de conduire et d’une voiture par exemple), état de santé, répartition du travail domestique au sein des ménages... De même, elle affecte le même poids à chaque frein alors que certains freins peuvent, suivant les situations, peser plus que d’autres (par exemple, la distance aux emplois peut être un frein important si on ne dispose pas de véhicule), voire, dans certains cas, ne pas peser du tout (le fait d’avoir une famille nombreuse n’est un frein pour l’emploi d’une femme que dans la mesure où c’est elle qui assume la majeure partie du soin aux enfants et que le territoire ne dispose pas de structures d’accueil pour les enfants). Certains territoires présentent ainsi un grand nombre de freins potentiels à l’emploi des femmes alors que leur insertion professionnelle est plutôt meilleure que dans le reste du territoire (c’est par exemple le cas au nord des Pays de la Loire et dans l’ancienne région Franche-Comté). C’est la raison d’être de SOFIE : fournir un diagnostic global nécessairement imparfait, puis consulter le détail de chaque indicateur pour identifier les principales difficultés et freins potentiels qui pourraient peser sur l'emploi des femmes dans leur territoire.</p>
 		<br/>
 		<p><i class="bi bi-lightbulb-fill"></i> Cliquez sur la carte pour accéder à la visiothèque de l'Observatoire des territoires et télécharger la carte.</p>
+		</div>
 	`) ;
 	$("#dico-illus").html("<a target='_blank' href = 'https://www.observatoire-des-territoires.gouv.fr/visiotheque/sofie-typologie-des-freins-potentiels-lacces-lemploi-des-femmes'><img src = 'img/cartes/SOFIE_typo_FREI_300pp_1.jpg'/></a>") ;
 }
 
 var fam2 = function(){
 	$("#dico-com").html(`
+		<div id="dico-texte">
 		<p class = 'dico-libindic'>Part des inactives / inactifs parmi les 15-64 ans (hors étudiant.e.s et retraité.e.s)</p>
 		<p class = 'dico-sourcindic'>Unité : en %</p>		
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021</p>
@@ -195,12 +204,14 @@ var fam2 = function(){
 		</ul>
 		<br/>
 		<p><i class="bi bi-lightbulb-fill"></i> Cliquez sur la carte pour accéder à la visiothèque de l'Observatoire des territoires et télécharger la carte.</p>
+		</div>
 	`) ;
 	$("#dico-illus").html("<a target='_blank' href = 'https://www.observatoire-des-territoires.gouv.fr/visiotheque/sofie-inegalites-femmes-hommes-face-linactivite'><img src = 'img/cartes/SOFIE_comparaisons_fam2_hd_1.jpg'/></a>") ;
 }
 
 var emp1 = function(){
 	$("#dico-com").html(`
+		<div id="dico-texte">
 		<p class = 'dico-libindic'>Taux de chômage des femmes / hommes</p>
 		<p class = 'dico-sourcindic'>Unité : en %</p>		
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021</p>
@@ -214,12 +225,14 @@ var emp1 = function(){
 		</ul>
 		<br/>
 		<p><i class="bi bi-lightbulb-fill"></i> Cliquez sur la carte pour accéder à la visiothèque de l'Observatoire des territoires et télécharger la carte.</p>
+		</div>
 	`) ;
 	$("#dico-illus").html("<a target='_blank' href = 'https://www.observatoire-des-territoires.gouv.fr/visiotheque/sofie-inegalites-femmes-hommes-face-au-chomage'><img src = 'img/cartes/SOFIE_comparaisons_emp1_hd_1.jpg'/></a>") ;
 }
 
 var emp3 = function(){
 	$("#dico-com").html(`
+		<div id="dico-texte">
 		<p class = 'dico-libindic'>Part des actives / actifs en emploi à temps partiel</p>
 		<p class = 'dico-sourcindic'>Unité : en %</p>		
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021</p>
@@ -231,6 +244,7 @@ var emp3 = function(){
 		</ul>
 		<br/>
 		<p><i class="bi bi-lightbulb-fill"></i> Cliquez sur la carte pour accéder à la visiothèque de l'Observatoire des territoires et télécharger la carte.</p>
+		</div>
 	`) ;
 	$("#dico-illus").html("<a target='_blank' href = 'https://www.observatoire-des-territoires.gouv.fr/visiotheque/sofie-inegalites-femmes-hommes-face-au-temps-partiel'><img src = 'img/cartes/SOFIE_comparaisons_emp3_hd_1.jpg'/></a>") ;
 }
@@ -238,6 +252,7 @@ var emp3 = function(){
 
 var emp4 = function(){
 	$("#dico-com").html(`
+		<div id="dico-texte">
 		<p class = 'dico-libindic'>Part des salarié.e.s occupant un emploi précaire</p>
 		<p class = 'dico-sourcindic'>Unité : en %</p>		
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021</p>
@@ -249,12 +264,14 @@ var emp4 = function(){
 		</ul>
 		<br/>
 		<p><i class="bi bi-lightbulb-fill"></i> Cliquez sur la carte pour accéder à la visiothèque de l'Observatoire des territoires et télécharger la carte.</p>
+		</div>
 	`) ;
 	$("#dico-illus").html("<a target='_blank' href = 'https://www.observatoire-des-territoires.gouv.fr/visiotheque/sofie-inegalites-femmes-hommes-face-la-precarite-de-lemploi'><img src = 'img/cartes/SOFIE_comparaisons_emp4_hd_1.jpg'/></a>") ;
 }
 
 var for3 = function(){
 	$("#dico-com").html(`
+		<div id="dico-texte">
 		<p class = 'dico-libindic'>Part des 15-24 ans ni en emploi, ni en études, ni en formation</p>
 		<p class = 'dico-sourcindic'>Unité : en %</p>		
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021</p>
@@ -266,12 +283,14 @@ var for3 = function(){
 		</ul>
 		<br/>
 		<p><i class="bi bi-lightbulb-fill"></i> Cliquez sur la carte pour accéder à la visiothèque de l'Observatoire des territoires et télécharger la carte.</p>
+		</div>
 	`) ;
 	$("#dico-illus").html("<a target='_blank' href = 'https://www.observatoire-des-territoires.gouv.fr/visiotheque/sofie-jeunes-femmes-et-jeunes-hommes-non-inseres'><img src = 'img/cartes/SOFIE_comparaisons_for3_hd_1.jpg'/></a>") ;
 }
 
 var fam1 = function(){
 	$("#dico-com").html(`
+		<div id="dico-texte">
 		<p class = 'dico-libindic'>Part des familles monoparentales formées d’une femme seule avec son / ses enfant(s) parmi l’ensemble des ménages</p>
 		<p class = 'dico-sourcindic'>Unité : en %</p>		
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021</p>
@@ -285,12 +304,14 @@ var fam1 = function(){
 		</ul>
 		<br/>
 		<p><i class="bi bi-lightbulb-fill"></i> Cliquez sur la carte pour accéder à la visiothèque de l'Observatoire des territoires et télécharger la carte.</p>
+		</div>
 	`) ;
 	$("#dico-illus").html("<a target='_blank' href = 'https://www.observatoire-des-territoires.gouv.fr/visiotheque/sofie-familles-monoparentales'><img src = 'img/cartes/SOFIE_leviers-freins-fam1_hd_1.jpg'/></a>") ;
 }
 
 var fam3 = function(){
 	$("#dico-com").html(`
+		<div id="dico-texte">
 		<p class = 'dico-libindic'>Part des familles nombreuses parmi l’ensemble des ménages</p>
 		<p class = 'dico-sourcindic'>Unité : en %</p>		
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021</p>
@@ -303,12 +324,14 @@ var fam3 = function(){
 		</ul>
 		<br/>
 		<p><i class="bi bi-lightbulb-fill"></i> Cliquez sur la carte pour accéder à la visiothèque de l'Observatoire des territoires et télécharger la carte.</p>
+		</div>
 	`) ;
 	$("#dico-illus").html("<a target='_blank' href = 'https://www.observatoire-des-territoires.gouv.fr/visiotheque/sofie-familles-nombreuses'><img src = 'img/cartes/SOFIE_leviers-freins-fam3_hd_1.jpg'/></a>") ;
 }
 
 var emp2 = function(){
 	$("#dico-com").html(`
+		<div id="dico-texte">
 		<p class = 'dico-libindic'>Indice de ségrégation femmes / hommes des secteurs d'activité</p>
 		<p class = 'dico-sourcindic'>Unité : en %</p>		
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021</p>
@@ -324,6 +347,7 @@ var emp2 = function(){
 		</ul>
 		<br/>
 		<p><i class="bi bi-lightbulb-fill"></i> Cliquez sur la carte pour accéder à la visiothèque de l'Observatoire des territoires et télécharger la carte.</p>
+		</div>
 	`) ;
 	$("#dico-illus").html("<a target='_blank' href = 'https://www.observatoire-des-territoires.gouv.fr/visiotheque/sofie-mixite-femmes-hommes-de-loffre-demploi'><img src = 'img/cartes/SOFIE_leviers-freins-emp2_hd_segregation.jpg'/></a>") ;
 }
@@ -331,6 +355,7 @@ var emp2 = function(){
 
 var for2 = function(){
 	$("#dico-com").html(`
+		<div id="dico-texte">
 		<p class = 'dico-libindic'>Part des femmes non diplômées ou titulaires d’un diplôme inférieur au niveau baccalauréat</p>
 		<p class = 'dico-sourcindic'>Unité : en %</p>		
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021</p>
@@ -345,12 +370,14 @@ var for2 = function(){
 		</ul>
 		<br/>
 		<p><i class="bi bi-lightbulb-fill"></i> Cliquez sur la carte pour accéder à la visiothèque de l'Observatoire des territoires et télécharger la carte.</p>
+		</div>
 	`) ;
 	$("#dico-illus").html("<a target='_blank' href = 'https://www.observatoire-des-territoires.gouv.fr/visiotheque/sofie-femmes-peu-ou-pas-diplomees'><img src = 'img/cartes/SOFIE_leviers-freins-for2_hd_1.jpg'/></a>") ;
 }
 
 var equ1 = function(){
 	$("#dico-com").html(`
+		<div id="dico-texte">
 		<p class = 'dico-libindic'>Nombre d’enfants de moins de 3 ans n’ayant théoriquement pas de place en mode d’accueil formel</p>
 		<p class = 'dico-sourcindic'>Unité : pour 100 enfants de moins de 3 ans</p>		
 		<p class = 'dico-sourcindic'>Source : CAF 2021</p>	
@@ -363,12 +390,14 @@ var equ1 = function(){
 		</ul>
 		<br/>
 		<p><i class="bi bi-lightbulb-fill"></i> Cliquez sur la carte pour accéder à la visiothèque de l'Observatoire des territoires et télécharger la carte.</p>
+		</div>
 	`) ;
 	$("#dico-illus").html("<a target='_blank' href = 'https://www.observatoire-des-territoires.gouv.fr/visiotheque/sofie-accueil-des-jeunes-enfants'><img src = 'img/cartes/SOFIE_leviers-freins-equ1_hd_1.jpg'/></a>") ;
 }
 
 var equ2 = function(){
 	$("#dico-com").html(`
+		<div id="dico-texte">
 		<p class = 'dico-libindic'>Part des 6-10 ans scolarisés hors de leur commune de résidence</p>
 		<p class = 'dico-sourcindic'>Unité : en %</p>		
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021</p>
@@ -381,12 +410,14 @@ var equ2 = function(){
 		</ul>
 		<br/>
 		<p><i class="bi bi-lightbulb-fill"></i> Cliquez sur la carte pour accéder à la visiothèque de l'Observatoire des territoires et télécharger la carte.</p>
+		</div>
 	`) ;
 	$("#dico-illus").html("<a target='_blank' href = 'https://www.observatoire-des-territoires.gouv.fr/visiotheque/sofie-eloignement-de-lecole'><img src = 'img/cartes/SOFIE_leviers-freins-equ2_hd_1.jpg'/></a>") ;
 }
 
 var equ3 = function(){
 	$("#dico-com").html(`
+		<div id="dico-texte">
 		<p class = 'dico-libindic'>Temps moyen de trajet domicile-travail des femmes</p>
 		<p class = 'dico-sourcindic'>Unité : en minutes</p>		
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021, Insee - Metric 2024</p>
@@ -401,6 +432,7 @@ var equ3 = function(){
 		</ul>
 		<br/>
 		<p><i class="bi bi-lightbulb-fill"></i> Cliquez sur la carte pour accéder à la visiothèque de l'Observatoire des territoires et télécharger la carte.</p>
+		</div>
 	`) ;
 	$("#dico-illus").html("<a target='_blank' href = 'https://www.observatoire-des-territoires.gouv.fr/visiotheque/sofie-trajet-domicile-travail-des-femmes'><img src = 'img/cartes/SOFIE_leviers-freins-equ3_hd_segregation.jpg'/></a>") ;
 }
