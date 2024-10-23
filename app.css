@@ -1,7 +1,6 @@
 /* GENERAL */
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
-@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 @import url('https://fntg.paris/api/fonts/marianne.css');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 
 body{
 	font-family : 'Marianne', sans-serif;
@@ -59,7 +58,7 @@ body{
 }
 
 #introtitle{
-	font-family:'Bree Serif' ;
+	font-family:'Marianne' ;
 	font-weight : bold ; 
 	font-size : 5em !important ;
 	line-height : 1em ;
@@ -146,7 +145,7 @@ body{
 }
 
 #maintitle{
-	font-family:'Bree Serif' ;
+	font-family:'Marianne' ;
 	font-weight : bold ; 
 	font-size : 2em ;
 	line-height : 0em ;
@@ -265,7 +264,7 @@ input[type=submit] {
 
 .info{
     padding: 6px 8px;
-    font: 14px/16px 'Ubuntu', sans-serif;
+    font: 14px/16px 'Marianne', sans-serif;
     background: white;
     background: rgba(255,255,255,0.8);
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -368,7 +367,7 @@ h4{
 	margin-left : 3vw ;
 }
 #titre2{
-	font-family:'Bree Serif' ;
+	font-family:'Marianne' ;
 	font-weight : bold ; 
 	font-size : 2em ;
 	color : #6e2150;
