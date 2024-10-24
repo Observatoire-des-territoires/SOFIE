@@ -23,17 +23,17 @@ body{
 }
 
 #logosrow{
-	background-color : #f8f9f9 ;
+	background-color : white ;
 	padding : 1em ;
 }
 
 #maincont{
-	background-color : #f8f9f9 ;
+	background-color : white;
 }
 
 #logos{
 	height : 15vh ;
-	background-color : #f8f9f9 ;
+	background-color : white ;
 }
 
 #logos img{
@@ -163,7 +163,7 @@ body{
 	letter-spacing: 0.05em;
 	text-decoration: none;
 	color : white ;
-	padding-right : 660px ;
+	padding-right : 60px ;
 }
 
 .nav-link{
@@ -383,7 +383,8 @@ h4{
 /* DICTIONNAIRE, A PROPOS, AIDE */
 #bloctitre2, #apropos-bloc, #help-bloc{
 	margin-top : 10vh ;
-	margin-left : 3vw ;
+	margin-left : 2.1vw ;
+	margin-bottom: 3vh;
 	font-family:'Marianne' ;
 }
 #titre2{
@@ -478,7 +479,7 @@ button:focus:not(:focus-visible) {
 }
 
 .dico-libindic, .apropos-subtitle{
-	font-size : 1.1em ;
+	font-size : 1.2em ;
 	font-weight : bold ;
 }
 
@@ -487,6 +488,7 @@ button:focus:not(:focus-visible) {
 	font-style : italic ;
 	color : #808080 ;
 	line-height : 0 ;
+	margin-bottom : 5vh;
 }
 
 
