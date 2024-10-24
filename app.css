@@ -22,6 +22,14 @@ body{
 	width : 100% ;
 }
 
+#intro-frise-miroir{
+	height : 100%;
+	width : 25% ;
+	position: absolute;
+	right:0;
+}
+
+
 #logosrow{
 	background-color : white ;
 	padding : 1em ;
@@ -391,6 +399,7 @@ h4{
 	margin-top : 10vh ;
 	margin-left : 2.1vw ;
 	margin-bottom: 3vh;
+	margin-right : 200px;
 	font-family:'Marianne' ;
 }
 #titre2{
