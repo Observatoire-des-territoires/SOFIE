@@ -116,6 +116,7 @@ body{
 #c2, #c3, #c4{
 	display : none ;
 	font-family:'Marianne' ;
+	background-color : white ;
 }
 
 #nomEPCI, #nomEPCI2, #nomEPCI3{
