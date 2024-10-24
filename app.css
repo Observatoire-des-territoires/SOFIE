@@ -27,6 +27,11 @@ body{
 	padding : 1em ;
 }
 
+#form-diag{
+	background-color : white ;
+	padding : 1em ;
+}
+
 #maincont{
 	background-color : white;
 }
@@ -198,6 +203,7 @@ ul.navbar-nav > li .active {
 
 #form{
 	height : 100% ;
+	background-color : white ;
 }
 
 #form form{
