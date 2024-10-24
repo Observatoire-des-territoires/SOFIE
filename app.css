@@ -501,5 +501,7 @@ button:focus:not(:focus-visible) {
 #dico-texte{
 	font-family:'Marianne' ;
 	font-size: 14px;
+	margin-left: 25px;
+	margin-right:25px;
 }
 
