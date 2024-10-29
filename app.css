@@ -78,7 +78,7 @@ body{
 	font-size : 5em !important ;
 	line-height : 1em ;
 	letter-spacing : 0.05em ;
-	color : #6e2150 ;
+	color : #6F2151 ;
 }
 
 #sub{
@@ -88,7 +88,7 @@ body{
 
 #maincont button:hover{
 	background-color : #e8d5e1 !important;
-	color : #6e2150 !important;
+	color : #6F2151 !important;
 	font-family:'Marianne' ;
 }
 
@@ -96,12 +96,12 @@ body{
 	border-radius : 50px ;
 	font-size : 1.2em ;
 	font-family:'Marianne' ;
-	background-color : #6e2150 !important;
+	background-color : #6F2151 !important;
 	color : #f8f9f9  !important;
 }
 
 #maincont a {
-	color : #6e2150 ;
+	color : #6F2151 ;
 	display : inline ;
 	margin-right : 2vw ;
 	font-family:'Marianne' ;
@@ -135,13 +135,13 @@ body{
 	border : 1px solid #f8f9f9 !important; 
 	color : white !important; 
 	font-family:'Marianne' ;
-	background-color : #6e2150 !important;
+	background-color : #6F2151 !important;
 	border-radius : 2 !important;
 }
 
 .btn:hover{
 	background-color : #e8d5e1 !important;
-	color : #6e2150 !important;
+	color : #6F2151 !important;
 	font-family:'Marianne' ;
 }
 
@@ -166,7 +166,7 @@ body{
 /* *********************** */
 /* BANDEAU DE TITRE */
 .navbar{
-	background-color : #6e2150 ;
+	background-color : #6F2151 ;
 }
 
 #maintitle{
@@ -271,18 +271,18 @@ input[type=submit] {
 
 .autoc-highlight{
 	background-color :  #e8d5e1 ; 
-	color : #6e2150;
+	color : #6F2151;
 	pointer-events: none;
 }
 
 #go{
-	background-color : #6e2150;
+	background-color : #6F2151;
 	 border-radius : 5px ;
 }
 
 #go:hover{
 	background-color : #e8d5e1 !important;
-	color : #6e2150 !important;
+	color : #6F2151 !important;
 }
 /* *********************** */
 /* CARTE */
@@ -407,7 +407,7 @@ h4{
 	font-family:'Marianne' ;
 	font-weight : bold ; 
 	font-size : 2em ;
-	color : #6e2150;
+	color : #6F2151;
 }
 
 #navindic{

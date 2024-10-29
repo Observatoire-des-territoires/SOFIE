@@ -298,11 +298,11 @@ d3.csv("data/libEPCIEPT20.csv").then(function(libdata){
 	}
 	
 	function getColor3(d) {
-    return d == "FAVP" ? '#40D7A6' :
-           d == "FAV"  ? '#B4E9C7' :
-           d == "MOY"  ? '#FEF8CB' :
-           d == "DEG"  ? '#B58BA5' :
-           d == "DEGP"   ? '#6E2150' :
+    return d == "FAVP" ? '#568F00' :
+           d == "FAV"  ? '#D0C134' :
+           d == "MOY"  ? '#FADBBE' :
+           d == "DEG"  ? '#DC3778' :
+           d == "DEGP"   ? '#6F2151' :
                       '#ede9d8';
 	}
 	
@@ -359,8 +359,8 @@ d3.csv("data/libEPCIEPT20.csv").then(function(libdata){
 					return feature.properties.EPCI_EPT == curr_code;
 				},
 				style:{
-					"color": "#666",
-					"weight": 3,
+					"color": "white",
+					"weight": 6,
 					"fillOpacity": 0,
 				},
 				onEachFeature: function(feature, layer){
