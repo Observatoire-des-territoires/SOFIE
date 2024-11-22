@@ -768,29 +768,29 @@ function drawgraph(dfG, sexe){
 	  nodes.append("rect")
 			.attr("x", x(vmin)).attr("y", y(1))
 			.attr("width", x(binf2)-x(vmin)).attr("height", height)
-			.attr("fill", "#40D7A6") ;
+			.attr("fill", "#568F00") ;
 	  }
 	  if(vmin < 90){
 	  nodes.append("rect")
 			.attr("x", x(binf2)).attr("y", y(0))
 			.attr("width", x(binf3)-x(binf2)).attr("height", height)
-			.attr("fill", "#B4E9C7") ;
+			.attr("fill", "#D0C134") ;
 	 }
 	  nodes.append("rect")
 			.attr("x", x(binf3)).attr("y", y(0))
 			.attr("width", x(binf4)-x(binf3)).attr("height", height)
-			.attr("fill", "#FEF8CB") ;
+			.attr("fill", "#FADBBE") ;
 	  if(vmax > 110){
 	  nodes.append("rect")
 			.attr("x", x(binf4)).attr("y", y(0))
 			.attr("width", x(binf5)-x(binf4)).attr("height", height)
-			.attr("fill", "#B58BA5") ;
+			.attr("fill", "#DC3778") ;
 	  }
 	  if(vmax > 125){
 	  nodes.append("rect")
 			.attr("x", x(binf5)).attr("y", y(0))
 			.attr("width", width-x(binf5)+30).attr("height", height)
-			.attr("fill", "#6E2150") ;
+			.attr("fill", "#6F2151") ;
 	 }
 			
 	  // Lignes horizontales
