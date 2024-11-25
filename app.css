@@ -23,7 +23,7 @@ body{
 }
 
 #intro-frise-miroir{
-	height : 100%;
+	height : auto;
 	width : 25% ;
 	position: absolute;
 	right:0;
@@ -397,7 +397,7 @@ h4{
 /* *********************** */
 /* DICTIONNAIRE, A PROPOS, AIDE */
 #bloctitre2, #apropos-bloc, #help-bloc{
-	margin-top : 10vh ;
+	margin-top : 15vh ;
 	margin-left : 2.1vw ;
 	margin-bottom: 3vh;
 	margin-right : 200px;
