@@ -362,11 +362,11 @@ div.tooltip{
 }
 
 .btn#help-btn-1, .btn#help-btn-2{
-	background-color : #f8f9f9 !important;
+	background-color : white !important;
 }
 
 .btn.help-btn-1:hover, .btn.help-btn-2:hover{
-	background-color : #f8f9f9 !important;
+	background-color : white !important;
 }
 
 /* *********************** */
