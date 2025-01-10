@@ -230,11 +230,12 @@ d3.csv("data/libEPCIEPT20.csv").then(function(libdata){
 	$('html,body').animate({scrollTop: $("#c2").offset().top},100);
 
 	// Récupérer le code associé au nom de l'EPCI sélectionné
-    search = $('#myAutocomplete').val().replaceAll("'", "&#x27;");
+    search = $('#myAutocomplete').val().replaceAll("'", "'"); //Si problème d'encodage, faire les modifs nécessaires
 	console.log(search) ;
 	
 	var temp = libdata.filter(function(d){ return d.LIBGEO == search}) ;
-
+	
+	console.log(temp)
 	curr_code = temp[0].CODGEO ;
 	
 	// Afficher le nom de l'EPCI
