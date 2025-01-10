@@ -409,7 +409,7 @@ var listEPCI2 = [
   },
   {
     "value": 200096956,
-    "label": "CA d'Agen"
+    "label": "CA Agglomération d'Agen"
   },
   {
     "value": 200035533,
@@ -506,10 +506,6 @@ var listEPCI2 = [
   {
     "value": 200036549,
     "label": "CC Val de Gray"
-  },
-  {
-    "value": 200036572,
-    "label": "CC Porte d'Aquitaine en Pays de Serres"
   },
   {
     "value": 200037059,
@@ -4158,10 +4154,6 @@ var listEPCI2 = [
   {
     "value": 245901038,
     "label": "CC du Pays Solesmois"
-  },
-  {
-    "value": 245901061,
-    "label": "CC de la Haute-Deûle"
   },
   {
     "value": 245901152,
