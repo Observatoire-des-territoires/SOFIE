@@ -8,7 +8,7 @@ Développée par l'Observatoire des territoires de l'ANCT, SOFIE a pour objectif
 Cette application est une mise à jour d'une première version de SOFIE construite grâce au package R Shiny. Cette nouvelle version est construite en javascript, html et css et s'appuie notamment sur la librairie d3.js. Les scripts ayant servi à la construction de l'application sont mis à la disposition de tous dans le présent *repository*. 
 
 
-Lien vers l'application : https://observatoire-territoires.github.io/SOFIE-2.0/
+Lien vers l'application : https://observatoire-des-territoires.github.io/SOFIE/
 
 
 <img src="https://raw.githubusercontent.com/observatoire-territoires/SOFIE-2.0/master/sofie-2-accueil.png"/>
