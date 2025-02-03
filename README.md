@@ -1,4 +1,4 @@
-# SOFIE 2.0
+# SOFIE 
 <p align = right>
   <img src="https://raw.githubusercontent.com/observatoire-territoires/SOFIE-2.0/master/logo_OT.png"/>
 </p>
