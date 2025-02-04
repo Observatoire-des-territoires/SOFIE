@@ -121,7 +121,6 @@ body{
 }
 
 #nomEPCI, #nomEPCI2, #nomEPCI3{
-	margin-top : 10vh ;
 	height : 5vh ; 
 	width : 100% ; 
 	text-align : right ;
