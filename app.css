@@ -513,5 +513,8 @@ button:focus:not(:focus-visible) {
 	font-size: 14px;
 	margin-left: 25px;
 	margin-right:25px;
+	word-wrap: break-word; /* Permet de casser les longues chaînes de caractères */
+    overflow-wrap: break-word; /* Alternative moderne */
+    white-space: normal; /* Assure un retour à la ligne normal */
 }
 
