@@ -518,3 +518,18 @@ button:focus:not(:focus-visible) {
     white-space: normal; /* Assure un retour à la ligne normal */
 }
 
+table {
+	width: 100%;
+	margin: 20px 0;
+	border: 1px solid black;
+	border-spacing: 0;
+}
+th, td {
+	border: 1px solid black;
+	padding: 3px;
+	text-align: left;
+}
+th {
+	background-color: #e8dbe3;
+	border: 1px solid black;
+}

@@ -116,36 +116,135 @@ $(".accordion-body").click(function(){
 }) ;
 
 
+
 var typoipce = function(){
 	$("#dico-com").html(
-		`<div id="dico-texte">
+		`
+			<style>
+		
+
+		details {
+			background: #ffffff;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			margin-bottom: 10px;
+			padding: 10px;
+			transition: all 0.3s ease-in-out;
+		}
+
+		summary {
+			font-size: 14px;
+			cursor: pointer;
+			color:  #92576F ;
+			padding: 10px;
+			transition: background 0.3s ease-in-out;
+		}
+
+		summary:hover {
+			background: #f0f8ff;
+			border-radius: 8px;
+		}
+
+		details[open] {
+			background: #eef6ff;
+			border: 1px solid black;
+		}
+
+		
+
+		.link-box {
+			color: black;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		.link-box:hover {
+			text-decoration: underline;
+		}
+
+	</style>
+		
+		<div id="dico-texte">
 		<p class = 'dico-libindic'>Typologie de l’insertion professionnelle et des conditions d’emploi des femmes</p>
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021</p>
-		<p>Cette typologie est construite à partir de 5 indicateurs statistiques relatifs à l’insertion professionnelle et aux conditions d’emploi des femmes : 
-			<ul>
-				<li>la part des inactives (hors étudiantes et retraitées)</li>
-				<li>le taux de chômage</li>
-				<li>la part des salariées en contrat précaire (hors apprenties et stagiaires)</li>
-				<li>la part des femmes travaillant à temps partiel</li>
-				<li>la part des jeunes non insérées (ni en emploi, ni en études, ni en formation).</li>
-			</ul>	
-		<p>Chacun de ces 5 indicateurs est dans un premier temps converti en base 100 en référence à la valeur nationale (par exemple, pour une part d’inactive de 19,3 % au niveau local contre 11,5 % en France, on a un indice base 100 égal à 19,3 * 100 / 11,5 ≈ 168).</p>
-		<p>Dans un second temps, on applique l'algorithme suivant :</p>
-		<ol>
-			<li>On classe les indicateurs selon 5 modalités : « très dégradé » (pour un indice base 100 supérieur à 125), « dégradé » (pour un indice base 100 entre 110 et 125), « moyen » (pour un indice base 100 entre 90 et 110), « favorable » (pour un indice base 100 entre 75 et 90) et « très favorable » (pour un indice base 100 inférieur à 75) ;</li>
-			<li>On compte le nombre d’indicateurs dans chaque catégorie ;</li>
-			<li>On applique l’algorithme suivant :</li>
-			<ul>
-				<li>si le nombre d’indicateurs « très dégradé » est supérieur ou égal à 3, alors : typologie = « dégradées »,</li>
-				<li>sinon si le nombre d’indicateurs « très dégradé » + <br> « dégradé » est supérieur ou égal à 3, alors : <br>typologie = « plutôt dégradées »,</li>
-				<li>sinon si le nombre d’indicateurs « très favorable » est supérieur ou égal à 3, alors : typologie = « favorables »,</li>
-				<li>sinon si le nombre d’indicateurs « très favorable » + <br> « favorable » est supérieur ou égal à 3, alors : <br>typologie = « plutôt favorables »,</li>
-				<li>sinon typologie = « moyennes ».</li>
-			</ul>
-		</ol>
-		<p>Cette typologie, volontairement simple, a pour objectif de permettre une interprétation rapide et intuitive des 5 indicateurs d’insertion professionnelle et de conditions d’emploi des femmes. La situation locale peut néanmoins être contrastée et difficilement traduisible sous la forme d’une typologie simple. C’est la raison d’être de SOFIE : fournir un diagnostic global nécessairement imparfait, puis consulter le détail de chaque indicateur pour identifier les principales difficultés et freins potentiels qui pourraient peser sur l'emploi des femmes dans leur territoire.</p>
-		<br/>
-		</div>
+		<h1 class = 'dico-libindic'>Construction de la typologie</h1>
+    <p>Cette typologie est construite à partir de 5 indicateurs statistiques relatifs à l’insertion professionnelle et aux conditions d’emploi des femmes :</p>
+    <ul>
+        <li>La part des inactives (hors étudiantes et retraitées)</li>
+        <li>Le taux de chômage</li>
+        <li>La part des salariées en contrat précaire (hors apprenties et stagiaires)</li>
+        <li>La part des femmes travaillant à temps partiel</li>
+        <li>La part des jeunes non insérées (ni en emploi, ni en études, ni en formation).</li>
+    </ul>
+    <br/>
+
+	<details>
+    <summary>Méthode de calcul</h2></summary>
+	<br/>
+    <p><strong>1. Conversion en base 100 (référence nationale)</strong></p>
+    <p>Exemple : pour une part d’inactives de 19,3 % localement vs 11,5 % nationalement : 
+		<br><strong>Indice base 100</strong> = (19,3 × 100) / 11,5 ≈ 168</p>
+    
+	
+    <p><strong>2. Classement des indices</p></strong>
+    <table>
+        <tr>
+            <th>Indice base 100</th>
+            <th>Catégorie</th>
+        </tr>
+        <tr>
+            <td>> 125</td>
+            <td>Très dégradé</td>
+        </tr>
+        <tr>
+            <td>110 - 125</td>
+            <td>Dégradé</td>
+        </tr>
+        <tr>
+            <td>90 - 110</td>
+            <td>Moyen</td>
+        </tr>
+        <tr>
+            <td>75 - 90</td>
+            <td>Favorable</td>
+        </tr>
+        <tr>
+            <td>< 75</td>
+            <td>Très favorable</td>
+        </tr>
+    </table>
+    
+    <p><strong>3. Détermination de la typologie</p></strong>
+    <table border="1">
+        <tr>
+            <th>Conditions</th>
+            <th>Typologie</th>
+        </tr>
+        <tr>
+            <td>≥ 3 indicateurs « très dégradé »</td>
+            <td>Dégradées</td>
+        </tr>
+        <tr>
+            <td>≥ 3 indicateurs « très dégradé » + « dégradé »</td>
+            <td>Plutôt dégradées</td>
+        </tr>
+        <tr>
+            <td>≥ 3 indicateurs « très favorable »</td>
+            <td>Favorables</td>
+        </tr>
+        <tr>
+            <td>≥ 3 indicateurs « très favorable » + <br>« favorable »</td>
+            <td>Plutôt favorables</td>
+        </tr>
+        <tr>
+            <td>Sinon</td>
+            <td>Moyennes</td>
+        </tr>
+    </table>
+    
+    <h2 class = 'dico-libindic'>Objectif :</h2>
+    <p>Fournir une lecture rapide des conditions d’emploi des femmes, avec possibilité d’explorer les indicateurs en détail via SOFIE.</p>
+		</div></details>
 	`) ;
 	$("#dico-illus").html("<a target='_blank'><img src = 'img/cartes/SOFIE_typo_IPCE_300pp_1.jpg'/></a>") ;
 }
@@ -153,57 +252,248 @@ var typoipce = function(){
 
 var typoineg = function(){
 	$("#dico-com").html(`
+
+		<style>
+			
+
+			details {
+				background: #ffffff;
+				border: 1px solid #ddd;
+				border-radius: 8px;
+				margin-bottom: 10px;
+				padding: 10px;
+				transition: all 0.3s ease-in-out;
+			}
+
+			summary {
+				font-size: 14px;
+				cursor: pointer;
+				color:  #92576F ;
+				padding: 10px;
+				transition: background 0.3s ease-in-out;
+			}
+
+			summary:hover {
+				background: #f0f8ff;
+				border-radius: 8px;
+			}
+
+			details[open] {
+				background: #eef6ff;
+				border: 1px solid black;
+			}
+
+			
+
+			.link-box {
+				color: black;
+				text-decoration: none;
+				font-weight: bold;
+			}
+
+			.link-box:hover {
+				text-decoration: underline;
+			}
+
+		</style>
+
 		<div id="dico-texte">
 		<p class = 'dico-libindic'>Typologie des inégalités femmes-hommes en matière d’insertion professionnelle et de conditions d’emploi</p>
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021</p>
-		<p>Cette typologie est construite à partir de 5 indicateurs statistiques relatifs à l’insertion professionnelle et aux conditions d’emploi des femmes et des hommes : 
-			<ul>
-				<li>la part des inactifs / inactives (hors étudiant.e.s et retraité.e.s)</li>
-				<li>le taux de chômage</li>
-				<li>la part des salarié.e.s en contrat précaire (hors apprenti.e.s et stagiaires)</li>
-				<li>la part des femmes / hommes travaillant à temps partiel</li>
-				<li>la part des jeunes non inséré.e.s (ni en emploi, ni en études, ni en formation).</li>
-			</ul>
-		<p>Chacun de ces 5 indicateurs (déclinés par genre) est dans un premier temps converti en base 100 en référence à la valeur nationale des femmes (par exemple, pour une part d’inactive de 19,3 % au niveau local contre 11,5 % en France, on a un indice base 100 égal à 19,3 * 100 / 11,5 ≈ 168).</p>
-		<p>Dans un second temps, on calcule la somme des écarts femmes - hommes en base 100 constatés pour chacun de ces indicateurs. Cet indicateur est dans un dernier temps discrétisé en 5 classes grâce à la méthode des seuils naturels de sorte à regrouper les intercommunalités selon 5 modalités, des inégalités les plus marquées (somme des écarts en base 100 maximum) aux moins marquées (somme des écarts en base 100 minimum).</p>
-		<p>Cette typologie, volontairement simple, permet d’avoir une vue d’ensemble des inégalités femmes – hommes observables pour les 5 indicateurs d’insertion professionnelle et de conditions d’emploi choisis. Elle ne tient pas compte des autres dimensions, multiples, que peuvent revêtir les inégalités femmes – hommes, y compris dans l’emploi : inégalités de rémunération, inégalités d’avancement, plafond de verre, discriminations,… </p>
-		<br/>
-		</div>
+		
+		<h1 class = 'dico-libindic'>Construction de la typologie</h1>
+    <p>Cette typologie est construite à partir de 5 indicateurs statistiques relatifs à l’insertion professionnelle et aux conditions d’emploi des femmes et des hommes :</p>
+    <ul>
+        <li>La part des inactifs / inactives (hors étudiant.e.s et retraité.e.s)</li>
+        <li>Le taux de chômage</li>
+        <li>La part des salarié.e.s en contrat précaire (hors apprenti.e.s et stagiaires)</li>
+        <li>La part des femmes / hommes travaillant à temps partiel</li>
+        <li>La part des jeunes non inséré.e.s (ni en emploi, ni en études, ni en formation).</li>
+    </ul>
+    <br/>
+	<details>
+    <summary>Méthode de calcul</summary>
+	<br/>
+    <p><strong>1. Conversion en base 100 (référence nationale pour les femmes)</p></strong>
+    <p>Exemple : pour une part d’inactives de 19,3 % localement vs 11,5 % nationalement :
+    <br><strong>Indice base 100</strong> = (19,3 × 100) / 11,5 ≈ 168</p>
+    
+    <p><strong>2. Calcul des écarts femmes-hommes</p></strong>
+    <p>Somme des écarts en base 100 entre les valeurs locales des femmes et des hommes pour chaque indicateur</p>
+    
+    <p><strong>3. Discrétisation en 5 classes</p></strong>
+    <p>La somme des écarts est ensuite discrétisée en 5 classes à l’aide de la méthode des seuils naturels, des inégalités les plus marquées (somme des écarts en base 100 maximum) aux moins marquées (somme des écarts en base 100 minimum) :</p>
+    
+    <table>
+        <tr>
+            <th>Classe</th>
+            <th>Typologie</th>
+        </tr>
+        <tr>
+            <td>Classe 1</td>
+            <td>Contenues</td>
+        </tr>
+        <tr>
+            <td>Classe 2</td>
+            <td>Plutôt contenues</td>
+        </tr>
+        <tr>
+            <td>Classe 3</td>
+            <td>Moyennes</td>
+        </tr>
+        <tr>
+            <td>Classe 4</td>
+            <td>Plutôt marquées</td>
+        </tr>
+        <tr>
+            <td>Classe 5</td>
+            <td>Marquées</td>
+        </tr>
+    </table>
+    
+    <h2 class = 'dico-libindic'>Objectif</h2>
+    <p>Offrir une vision globale des inégalités femmes-hommes sur l’insertion et l’emploi. D’autres dimensions (rémunération, avancement, plafond de verre, discriminations…) ne sont pas prises en compte.</p>
+		    
+		</div></details>
 	`) ;
 	$("#dico-illus").html("<a target='_blank'><img src = 'img/cartes/SOFIE_typo_INEG_300pp_1.jpg'/></a>") ;
 }
 
 var typofrei = function(){
 	$("#dico-com").html(`
+		<style>
+			
+
+			details {
+				background: #ffffff;
+				border: 1px solid #ddd;
+				border-radius: 8px;
+				margin-bottom: 10px;
+				padding: 10px;
+				transition: all 0.3s ease-in-out;
+			}
+
+			summary {
+				font-size: 14px;
+				cursor: pointer;
+				color:  #92576F ;
+				padding: 10px;
+				transition: background 0.3s ease-in-out;
+			}
+
+			summary:hover {
+				background: #f0f8ff;
+				border-radius: 8px;
+			}
+
+			details[open] {
+				background: #eef6ff;
+				border: 1px solid black;
+			}
+
+			
+
+			.link-box {
+				color: black;
+				text-decoration: none;
+				font-weight: bold;
+			}
+
+			.link-box:hover {
+				text-decoration: underline;
+			}
+
+		</style>
+
+
 		<div id="dico-texte">
 		<p class = 'dico-libindic'>Typologie des freins potentiels à l'amélioration de l'accès à l’emploi des femmes</p>
 		<p class = 'dico-sourcindic'>Source : Insee - RP 2021, Insee - Metric 2024, CAF 2021</p>	
-		<p>Cette typologie est construite à partir de 7 indicateurs statistiques d’évaluation de freins potentiels à l’amélioration de l’accès à l’emploi des femmes : 
-			<ul>
-				<li>part des familles monoparentales composées d'une femme avec son ou ses enfant(s)</li>
-				<li>part des familles nombreuses</li>
-				<li>indice de mixité de l’offre d’emploi</li>
-				<li>part des femmes peu ou pas diplômées</li>
-				<li>nombre d’enfants âgés de moins de 3 ans n’ayant théoriquement pas de place en mode d’accueil formel</li>
-				<li>part des enfants scolarisés dans une autre commune que celle où ils résident</li>
-				<li>distance domicile-travail moyenne des femmes.</li>
-			</ul>
-		<p>Ces indicateurs sont dans un premier temps convertis en base 100 en référence à la valeur nationale (par exemple, pour une part de familles monoparentales égale à 13,6 % au niveau local contre 8,3 % en France, on a un indice base 100 égal à 13,6 * 100 / 8,3 ≈ 164).</p>
-		<p>Dans un second temps, on applique l’algorithme suivant : </p>
-		<ol>
-			<li>On classe les indicateurs selon 5 modalités : « très dégradé » (pour un indice base 100 supérieur à 125), « dégradé » (pour un indice base 110 entre 100 et 125), « moyen » (pour un indice base 100 entre 90 et 110), « favorable » (pour un indice base 100 entre 75 et 90) et « très favorable » (pour un indice base 100 inférieur à 75),</li>
-			<li>On compte le nombre d’indicateurs dans chaque catégorie et on applique l’algorithme suivant : </li>
-			<ul>
-				<li>si le nombre d’indicateurs « très dégradé » + « dégradé » est supérieur ou égale à 5 ou que le nombre d’indicateurs « très dégradé » est supérieur à 3, alors : <br>typologie = « marqués »,</li>
-				<li>sinon si le nombre d’indicateurs « très dégradé » + <br> « dégradé »  est supérieur ou égale à 4, alors : <br>typologie = « plutôt marqués »,</li>
-				<li>sinon si le nombre d’indicateurs « très favorable » est supérieur ou égale à 3, alors : typologie = « limités »,</li>
-				<li>sinon si le nombre d’indicateurs « très favorable » + <br>« favorable » est supérieur ou égal à 4, alors : <br> typologie = « plutôt limités »,</li>
-				<li>sinon typologie = « moyens / d'intensités variables ».</li>
-			</ul>
-		</ol>
-		<p>Cette typologie, volontairement simple, permet d’évaluer le poids des 7 freins potentiels à l’amélioration de l’accès à l’emploi des femmes, sélectionnés pour la typologie. Elle ne tient ainsi pas compte de l’ensemble des freins qui peuvent peser sur l’accès à l’emploi des femmes : accès à la mobilité (détention d’un permis de conduire et d’une voiture par exemple), état de santé, répartition du travail domestique au sein des ménages... De même, elle affecte le même poids à chaque frein alors que certains freins peuvent, suivant les situations, peser plus que d’autres (par exemple, la distance aux emplois peut être un frein important si on ne dispose pas de véhicule), voire, dans certains cas, ne pas peser du tout (le fait d’avoir une famille nombreuse n’est un frein pour l’emploi d’une femme que dans la mesure où c’est elle qui assume la majeure partie du soin aux enfants et que le territoire ne dispose pas de structures d’accueil pour les enfants). Certains territoires présentent ainsi un grand nombre de freins potentiels à l’emploi des femmes alors que leur insertion professionnelle est plutôt meilleure que dans le reste du territoire (c’est par exemple le cas au nord des Pays de la Loire et dans l’ancienne région Franche-Comté). C’est la raison d’être de SOFIE : fournir un diagnostic global nécessairement imparfait, puis consulter le détail de chaque indicateur pour identifier les principales difficultés et freins potentiels qui pourraient peser sur l'emploi des femmes dans leur territoire.</p>
-		<br/>
-		</div>
+		<h1 class = 'dico-libindic'>Construction de la typologie</h1>
+    <p>Cette typologie est construite à partir de 7 indicateurs statistiques d’évaluation de freins potentiels à l’amélioration de l’accès à l’emploi des femmes :</p>
+    <ul>
+        <li>Part des familles monoparentales composées d'une femme avec son ou ses enfant(s)</li>
+        <li>Part des familles nombreuses</li>
+        <li>Indice de mixité de l’offre d’emploi</li>
+        <li>Part des femmes peu ou pas diplômées</li>
+        <li>Nombre d’enfants âgés de moins de 3 ans n’ayant théoriquement pas de place en mode d’accueil formel</li>
+        <li>Part des enfants scolarisés dans une autre commune que celle où ils résident</li>
+        <li>Distance domicile-travail moyenne des femmes.</li>
+    </ul>
+    <br/>
+	<details>
+    <summary>Méthode de calcul</summary>
+	<br/>
+    <p><strong>1. Conversion en base 100 (référence nationale)</p></strong>
+    <p>Exemple : pour une part de familles monoparentales de 13,6 % localement vs 8,3 % nationalement :
+    <br><strong>Indice base 100</strong> = (13,6 × 100) / 8,3 ≈ 164</p>
+    
+    <p><strong>2. Classement des indicateurs</p></strong>
+    <table>
+        <tr>
+            <th>Indice base 100</th>
+            <th>Catégorie</th>
+        </tr>
+        <tr>
+            <td>> 125</td>
+            <td>Très dégradé</td>
+        </tr>
+        <tr>
+            <td>110 - 125</td>
+            <td>Dégradé</td>
+        </tr>
+        <tr>
+            <td>90 - 110</td>
+            <td>Moyen</td>
+        </tr>
+        <tr>
+            <td>75 - 90</td>
+            <td>Favorable</td>
+        </tr>
+        <tr>
+            <td>< 75</td>
+            <td>Très favorable</td>
+        </tr>
+    </table>
+    
+    <p><strong>3. Détermination de la typologie</p></strong>
+    <table>
+        <tr>
+            <th>Conditions</th>
+            <th>Typologie</th>
+        </tr>
+        <tr>
+            <td>≥ 5 indicateurs « très dégradé » + <br>« dégradé » ou > 3 indicateurs « très dégradé »</td>
+            <td>Marqués</td>
+        </tr>
+        <tr>
+            <td>≥ 4 indicateurs « très dégradé » + <br>« dégradé »</td>
+            <td>Plutôt marqués</td>
+        </tr>
+        <tr>
+            <td>≥ 3 indicateurs « très favorable »</td>
+            <td>Limités</td>
+        </tr>
+        <tr>
+            <td>≥ 4 indicateurs « très favorable » + <br>« favorable »</td>
+            <td>Plutôt limités</td>
+        </tr>
+        <tr>
+            <td>Sinon</td>
+            <td>Moyens / d’intensités variables</td>
+        </tr>
+    </table>
+    
+    <h2 class = 'dico-libindic'>Objectif</h2>
+    <p>Évaluer l’impact de 7 freins potentiels sur l’accès à l’emploi des femmes. Cette typologie volontairement simple ne couvre pas tous les freins (mobilité, état de santé, travail domestique…). Elle attribue un poids égal à chaque facteur, bien que leur impact varie selon le contexte.</p>
+    
+    <h2 class = 'dico-libindic'>Limites et interprétation</h2>
+    <ul>
+        <li>Certains freins peuvent être plus déterminants que d’autres (ex. : distance aux emplois sans véhicule).</li>
+        <li>Un territoire peut cumuler plusieurs freins sans pour autant avoir une insertion professionnelle dégradée (ex. : nord des Pays de la Loire, ancienne région Franche-Comté).</li>
+        <li>SOFIE permet d’affiner l’analyse en explorant chaque indicateur individuellement.</li>
+    </ul>
+		</div></details>
 	`) ;
 	$("#dico-illus").html("<a target='_blank'><img src = 'img/cartes/SOFIE_typo_FREI_300pp_1.jpg'/></a>") ;
 }
