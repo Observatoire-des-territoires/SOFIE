@@ -2,6 +2,23 @@
 @import url('https://fntg.paris/api/fonts/marianne.css');
 @import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 
+
+@font-face {
+	font-family: 'Marianne-Regular';
+	src: url('fonts/Marianne-Regular.woff2');
+  }
+  
+  @font-face {
+	font-family: 'Marianne-Bold';
+	src: url('fonts/Marianne-Bold.woff2');
+  }
+  
+  @font-face {
+	font-family: 'Marianne-ExtraBold';
+	src: url('fonts/Marianne-ExtraBold.woff2');
+  }
+  
+
 body{
 	font-family : 'Marianne', sans-serif;
 }
