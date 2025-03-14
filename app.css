@@ -77,13 +77,13 @@ body{
 	margin-top : 5vh ;
 	margin-left : 5vw ;
 	text-align : left ;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	color : #404040 ;
 }
 
 .intro-obj{
 	font-size : 1 em ;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 }
 
 #intro-btn{
@@ -91,7 +91,7 @@ body{
 }
 
 #introtitle{
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	font-weight : bold ; 
 	font-size : 5em !important ;
 	line-height : 1em ;
@@ -101,19 +101,19 @@ body{
 
 #sub{
 	font-style : italic ;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 }
 
 #maincont button:hover{
 	background-color : #e8d5e1 !important;
 	color : #6F2151 !important;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 }
 
 #maincont button{
 	border-radius : 50px ;
 	font-size : 1.2em ;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	background-color : #6F2151 !important;
 	color : #f8f9f9  !important;
 }
@@ -122,18 +122,18 @@ body{
 	color : #6F2151 ;
 	display : inline ;
 	margin-right : 2vw ;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 }
 
 /* GENERAL VISU */
 #c1, #c2, #c3, #c4{
 	background-color : #f8f9f9 ;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 }
 
 #c2, #c3, #c4{
 	display : none ;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	background-color : white ;
 }
 
@@ -142,7 +142,7 @@ body{
 	width : 100% ; 
 	text-align : right ;
 	font-size : 1.5em ; 
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	font-weight : bold ;
 	padding-right : 20px ;
 	color : #808080 ;
@@ -151,7 +151,7 @@ body{
 .btn{
 	border : 1px solid #f8f9f9 !important; 
 	color : white !important; 
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	background-color : #6F2151 !important;
 	border-radius : 2 !important;
 }
@@ -159,7 +159,7 @@ body{
 .btn:hover{
 	background-color : #e8d5e1 !important;
 	color : #6F2151 !important;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 }
 
 .link{
@@ -187,7 +187,7 @@ body{
 }
 
 #maintitle{
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	font-weight : bold ; 
 	font-size : 2em ;
 	line-height : 0em ;
@@ -199,7 +199,7 @@ body{
 
 .nav-link{
 	color : white ;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 }
 
 .nav-link:hover{
@@ -224,7 +224,7 @@ ul.navbar-nav > li .active {
 /* RECHERCHE */
 #visu-intro{
 	font-size : 1.2em ;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 }
 
 #form{
@@ -247,7 +247,7 @@ input {
   background-color: #f1f1f1;
   padding: 10px;
   font-size: 16px;
-  font-family:'Marianne' ;
+  font-family:'Marianne-Regular' ;
 }
 input[type=text] {
   background-color: #f1f1f1;
@@ -311,7 +311,7 @@ input[type=submit] {
 
 .info{
     padding: 6px 8px;
-    font: 14px/16px 'Marianne', sans-serif;
+    font: 14px/16px 'Marianne-Regular', sans-serif;
     background: white;
     background: rgba(255,255,255,0.8);
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -352,7 +352,7 @@ input[type=submit] {
 
 svg text{
 	font-size : 1.15em ;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 }
 
 div.tooltip{
@@ -361,7 +361,7 @@ div.tooltip{
   width: 150px;
   padding: 2px;
   font-size : 0.9em ;
-  font-family:'Marianne' ;
+  font-family:'Marianne-Regular' ;
   background: dimgrey;
   color : white ;
   border: 0px;
@@ -403,11 +403,11 @@ div.tooltip{
 .indcmax{
 	color : #92576F ; 
 	font-weight : bold ;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 }
 
 h4{
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	font-size : 1.2em !important ;
 }
 
@@ -418,10 +418,10 @@ h4{
 	margin-left : 2.1vw ;
 	margin-bottom: 3vh;
 	margin-right : 200px;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 }
 #titre2{
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	font-weight : bold ; 
 	font-size : 2em ;
 	color : #6F2151;
@@ -432,7 +432,7 @@ h4{
 }
 
 element.style {
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 }
 .accordion-flush .accordion-item:first-of-type .accordion-button {
     border-top-width: 0;
@@ -455,7 +455,7 @@ button:focus:not(:focus-visible) {
 	background-color: #8e4d77 !important;
     color:  white !important;
     outline: none !important;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	font-size: 15px;
 }
 .accordion-button:focus {
@@ -464,18 +464,18 @@ button:focus:not(:focus-visible) {
 	border-bottom: 1px solid white !important;
     outline: 0;
     box-shadow: none!important;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	font-size: 15px;
 }
 .accordion-button:hover {
     z-index: 2;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	
 }
 .accordion-button:not(.collapsed) {
     color: #0c63e4;
     background-color: #e7f1ff;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	
 }
 
@@ -486,24 +486,24 @@ button:focus:not(:focus-visible) {
 .accordion-body:hover{
 	background-color :  #FAEFF6 ;
 	cursor : pointer ;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	font-size: 14px;
 }
 
 .accordion-body.active{
 	background-color : #FAEFF6 ;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	font-size: 14px;
 }
 
 .accordion-button::after{
 	background-image : none!important;
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	
 }
 
 .accordion-body:not(.collapsed) {
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	font-size: 14px;
 }
 
@@ -526,7 +526,7 @@ button:focus:not(:focus-visible) {
 
 
 #dico-texte{
-	font-family:'Marianne' ;
+	font-family:'Marianne-Regular' ;
 	font-size: 14px;
 	margin-left: 25px;
 	margin-right:25px;
