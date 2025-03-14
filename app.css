@@ -29,6 +29,82 @@
     font-style: normal;
 }
 
+
+
+
+/* Mobile */
+@media (max-width: 768px) {
+    .container {
+        height: auto; /* Ajuster la hauteur de la container */
+    }
+
+    #introtitle {
+        font-size: 2.5em; /* Réduire la taille de la police pour les petits écrans */
+        margin-left: 2vw;
+    }
+
+    #intro-texte {
+        margin-left: 2vw; /* Ajuster la marge */
+        margin-top: 3vh; /* Ajuster la marge du haut */
+    }
+
+    #logos {
+        height: auto; /* Ajuster la taille des logos */
+    }
+
+    #logos img {
+		width: 100%; /* Utiliser la largeur totale de l'écran */
+		height: auto; /* Garder les proportions */
+		margin-left: 0;
+		float: none;
+	}
+	
+
+    .navbar {
+        padding: 0.5em; /* Réduire le padding de la navbar */
+    }
+
+    #maintitle {
+        font-size: 1.5em; /* Réduire la taille du titre */
+        padding-right: 0;
+    }
+
+    /* Ajustement des boutons */
+    #maincont button {
+        font-size: 1em;
+        padding: 10px 20px;
+        width: 100%; /* Boutons plus larges sur mobile */
+    }
+
+    /* Ajustement de la carte */
+    #mapcontainer {
+        height: 50vh;
+    }
+}
+
+/* Très petit écran (comme les téléphones en portrait) */
+@media (max-width: 480px) {
+    #introtitle {
+        font-size: 2em; /* Encore plus petit sur les très petits écrans */
+    }
+
+    #intro-texte {
+        font-size: 0.9em; /* Réduire la taille du texte */
+    }
+
+    #form form {
+        width: 100%; /* Formulaire prenant toute la largeur */
+    }
+}
+
+
+
+
+
+
+
+
+
 body {
     font-family: 'Marianne', Arial, sans-serif;
     font-weight: 400;
